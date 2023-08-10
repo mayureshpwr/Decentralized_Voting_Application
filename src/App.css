@@ -1,0 +1,297 @@
+/* Styles for the login container and background video */
+.login-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Push the video behind other elements */
+}
+
+/* Styles for the login content */
+.login-content {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  animation: fadeIn 1s ease; /* Text animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styles for the login button */
+.login-button {
+  background-color: #2695cd;
+  color: #000000;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  padding-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0069d9;
+  transform: scale(1.1); /* Button animation on hover */
+}
+
+/* Styles for the connected container */
+.connected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+
+/* Styles for the connected header */
+.connected-header {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the connected account info */
+.connected-account {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the connected button */
+.connected-button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.connected-button:hover {
+  background-color: #0069d9;
+  transform: scale(1.1); /* Button animation on hover */
+}
+
+/* Styles for the connected contract address */
+.connected-contract-address {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* Styles for the candidates table */
+.candidates-table {
+  border-collapse: collapse;
+  width: 50%;
+  text-align: center;
+  opacity: 0; /* Set initial opacity to 0 */
+  animation: fadeInTable 1s ease forwards; /* Apply the fadeInTable animation */
+}
+
+@keyframes fadeInTable {
+  to {
+    opacity: 1; /* Fade in the table to full opacity */
+  }
+}
+
+/* Styles for the table header and cell text color */
+.candidates-table th,
+.candidates-table td {
+  color: black; /* Change the text color to black */
+  padding: 8px;
+  text-align: center;
+  border-bottom: 4px solid #000000;
+}
+
+/* Styles for the table header background color */
+.candidates-table th {
+  background-color: #cf9fff;
+}
+
+/* Styles for row background color when hovered */
+.candidates-table tbody tr:hover {
+  background-color: #cf9fff;
+}
+
+/* Styles for the number input */
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* Add any other styles you want for the button container */
+}
+
+/* Styles for the register container */
+.register-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white; /* Set the container height to full viewport height */
+}
+
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Push the video behind other elements */
+}
+
+/* Styles for the register form */
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Styles for the register label */
+.register-container label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Styles for the register input */
+.register-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  width: 200px;
+  align-items: center;
+}
+
+/* Styles for the register button */
+.register-button {
+  background-color: #2695cd;
+  color: #000000;
+  font-size: 1.2rem;
+  border: 4px;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+.register-button:hover {
+  background-color: #0069d9;
+  transform: scale(1.1); /* Button animation on hover */
+}
+/* Styles for the register container */
+.register-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+
+
+/* Styles for the Documentation and Help section */
+.help-container {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+  overflow: auto;
+  animation: drop 1s ease;
+  height: 100vh;
+  background-color: #3fc9f0;
+}
+
+.help-container h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.help-container h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.help-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.help-container ol,
+.help-container ul {
+  margin-left: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.help-container dl {
+  margin-left: 20px;
+}
+
+.help-container dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.help-container dd {
+  margin-left: 20px;
+}
+
+/* Styles for the "Documentation & Help" button */
+.help-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #2695cd;
+  color: #000000;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.help-button:hover {
+  background-color: #0069d9;
+}
+
